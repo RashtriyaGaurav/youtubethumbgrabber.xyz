@@ -1,67 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<!-- Primary SEO -->
-<title>YouTube Thumbnail Downloader (HD, All Resolutions)</title>
-<meta name="description" content="Download YouTube video thumbnails in every resolution, from 120×90 up to full HD 1280×720. Free, no sign-up, no watermark, works for regular videos and Shorts." />
-<meta name="keywords" content="youtube thumbnail downloader, download youtube thumbnail, youtube thumbnail grabber, hd youtube thumbnail, youtube thumbnail hd download, maxresdefault downloader" />
-<meta name="robots" content="index, follow" />
-<link rel="canonical" href="https://yourdomain.com/" />
+    <!-- Primary SEO -->
+    <title>YouTube Thumbnail Downloader (HD, All Resolutions)</title>
+    <meta name="description"
+        content="Download YouTube video thumbnails in every resolution, from 120×90 up to full HD 1280×720. Free, no sign-up, no watermark, works for regular videos and Shorts." />
+    <meta name="keywords"
+        content="youtube thumbnail downloader, download youtube thumbnail, youtube thumbnail grabber, hd youtube thumbnail, youtube thumbnail hd download, maxresdefault downloader" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://www.youtubethumbgrabber.xyz" />
 
-<!-- Open Graph -->
-<meta property="og:type" content="website" />
-<meta property="og:title" content="Thumb Lab — Free YouTube Thumbnail Downloader" />
-<meta property="og:description" content="Paste a YouTube link, get every official thumbnail resolution ready to save. Free and runs entirely in your browser." />
-<meta property="og:url" content="https://yourdomain.com/" />
-<meta property="og:image" content="https://yourdomain.com/og-image.jpg" />
-<meta property="og:site_name" content="Thumb Lab" />
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Thumb Lab — Free YouTube Thumbnail Downloader" />
+    <meta property="og:description"
+        content="Paste a YouTube link, get every official thumbnail resolution ready to save. Free and runs entirely in your browser." />
+    <meta property="og:url" content="https://www.youtubethumbgrabber.xyz/" />
+    <meta property="og:image" content="https://yourdomain.com/og-image.jpg" />
+    <meta property="og:site_name" content="Thumb Lab" />
 
-<!-- Twitter -->
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Thumb Lab — Free YouTube Thumbnail Downloader" />
-<meta name="twitter:description" content="Download every YouTube thumbnail resolution in one click. Free, no sign-up." />
-<meta name="twitter:image" content="https://yourdomain.com/og-image.jpg" />
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Thumb Lab — Free YouTube Thumbnail Downloader" />
+    <meta name="twitter:description"
+        content="Download every YouTube thumbnail resolution in one click. Free, no sign-up." />
+    <meta name="twitter:image" content="https://www.youtubethumbgrabber.xyz/og-image.jpg" />
 
-<!-- Favicon (aperture mark, inline so no extra file needed) -->
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='8' fill='%230E0D0C'/%3E%3Cg fill='%23E8A33D'%3E%3Cpath d='M20 20 L20 5 A15 15 0 0 1 33 12.5 Z'/%3E%3Cpath d='M20 20 L20 5 A15 15 0 0 1 33 12.5 Z' transform='rotate(60 20 20)'/%3E%3Cpath d='M20 20 L20 5 A15 15 0 0 1 33 12.5 Z' transform='rotate(120 20 20)'/%3E%3Cpath d='M20 20 L20 5 A15 15 0 0 1 33 12.5 Z' transform='rotate(180 20 20)'/%3E%3Cpath d='M20 20 L20 5 A15 15 0 0 1 33 12.5 Z' transform='rotate(240 20 20)'/%3E%3Cpath d='M20 20 L20 5 A15 15 0 0 1 33 12.5 Z' transform='rotate(300 20 20)'/%3E%3C/g%3E%3Ccircle cx='20' cy='20' r='6' fill='%230E0D0C'/%3E%3Ccircle cx='20' cy='20' r='2' fill='%23C4432B'/%3E%3C/svg%3E" />
+    <!-- Favicon (aperture mark, inline so no extra file needed) -->
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='8' fill='%230E0D0C'/%3E%3Cg fill='%23E8A33D'%3E%3Cpath d='M20 20 L20 5 A15 15 0 0 1 33 12.5 Z'/%3E%3Cpath d='M20 20 L20 5 A15 15 0 0 1 33 12.5 Z' transform='rotate(60 20 20)'/%3E%3Cpath d='M20 20 L20 5 A15 15 0 0 1 33 12.5 Z' transform='rotate(120 20 20)'/%3E%3Cpath d='M20 20 L20 5 A15 15 0 0 1 33 12.5 Z' transform='rotate(180 20 20)'/%3E%3Cpath d='M20 20 L20 5 A15 15 0 0 1 33 12.5 Z' transform='rotate(240 20 20)'/%3E%3Cpath d='M20 20 L20 5 A15 15 0 0 1 33 12.5 Z' transform='rotate(300 20 20)'/%3E%3C/g%3E%3Ccircle cx='20' cy='20' r='6' fill='%230E0D0C'/%3E%3Ccircle cx='20' cy='20' r='2' fill='%23C4432B'/%3E%3C/svg%3E" />
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<script src="https://cdn.tailwindcss.com"></script>
-<script>
-  tailwind.config = {
-    theme: {
-      extend: {
-        colors: {
-          ink: '#0E0D0C',
-          surface: '#191715',
-          surface2: '#221F1C',
-          amber: '#E8A33D',
-          safelight: '#C4432B',
-          paper: '#F2EDE4',
-          muted: '#8A8378',
-        },
-        fontFamily: {
-          display: ['"Archivo Black"', 'sans-serif'],
-          mono: ['"IBM Plex Mono"', 'monospace'],
-          body: ['Inter', 'sans-serif'],
-        },
-      },
-    },
-  }
-</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        ink: '#0E0D0C',
+                        surface: '#191715',
+                        surface2: '#221F1C',
+                        amber: '#E8A33D',
+                        safelight: '#C4432B',
+                        paper: '#F2EDE4',
+                        muted: '#8A8378',
+                    },
+                    fontFamily: {
+                        display: ['"Archivo Black"', 'sans-serif'],
+                        mono: ['"IBM Plex Mono"', 'monospace'],
+                        body: ['Inter', 'sans-serif'],
+                    },
+                },
+            },
+        }
+    </script>
 
-<!-- Structured data: WebApplication -->
-<script type="application/ld+json">
+    <!-- Structured data: WebApplication -->
+    <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebApplication",
   "name": "Thumb Lab",
-  "url": "https://yourdomain.com/",
+  "url": "https://www.youtubethumbgrabber.xyz/",
   "description": "Free browser-based tool to download YouTube video thumbnails in every official resolution, from 120x90 up to 1280x720.",
   "applicationCategory": "MultimediaApplication",
   "operatingSystem": "Any (runs in browser)",
@@ -73,8 +81,8 @@
 }
 </script>
 
-<!-- Structured data: FAQ -->
-<script type="application/ld+json">
+    <!-- Structured data: FAQ -->
+    <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -108,422 +116,523 @@
 }
 </script>
 
-<style>
-  body { background-color: #0E0D0C; }
+    <style>
+        body {
+            background-color: #0E0D0C;
+        }
 
-  .grain::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    pointer-events: none;
-    opacity: 0.05;
-    z-index: 50;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-  }
+        .grain::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            opacity: 0.05;
+            z-index: 50;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+        }
 
-  .sprocket-row {
-    height: 14px;
-    background-color: #E8A33D;
-    position: relative;
-  }
-  .sprocket-row::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-image: repeating-linear-gradient(
-      to right,
-      transparent 0px, transparent 5px,
-      #0E0D0C 5px, #0E0D0C 12px,
-      transparent 12px, transparent 22px
-    );
-    background-position: 8px 3px;
-    background-size: 22px 8px;
-    background-repeat: repeat-x;
-  }
+        .sprocket-row {
+            height: 14px;
+            background-color: #E8A33D;
+            position: relative;
+        }
 
-  .frame-flicker { animation: flicker 3.2s ease-in-out infinite; }
-  @keyframes flicker {
-    0%, 100% { opacity: 1; }
-    92% { opacity: 1; }
-    94% { opacity: 0.85; }
-    96% { opacity: 1; }
-  }
+        .sprocket-row::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-image: repeating-linear-gradient(to right,
+                    transparent 0px, transparent 5px,
+                    #0E0D0C 5px, #0E0D0C 12px,
+                    transparent 12px, transparent 22px);
+            background-position: 8px 3px;
+            background-size: 22px 8px;
+            background-repeat: repeat-x;
+        }
 
-  @keyframes develop {
-    0% { opacity: 0; filter: brightness(0.2) contrast(1.4); transform: scale(1.02); }
-    60% { opacity: 1; filter: brightness(1.15) contrast(1.05); }
-    100% { opacity: 1; filter: brightness(1) contrast(1); transform: scale(1); }
-  }
-  .developing { animation: develop 1.1s ease-out forwards; }
+        .frame-flicker {
+            animation: flicker 3.2s ease-in-out infinite;
+        }
 
-  @keyframes pulseLight {
-    0%, 100% { box-shadow: 0 0 0px 0px rgba(196,67,43,0.0); }
-    50% { box-shadow: 0 0 20px 3px rgba(196,67,43,0.4); }
-  }
-  .safelight-glow { animation: pulseLight 2.4s ease-in-out infinite; }
-  .logo-spin { transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1); }
-  .logo-wrap:hover .logo-spin { transform: rotate(25deg); }
+        @keyframes flicker {
 
-  .skeleton {
-    background: linear-gradient(100deg, #221F1C 30%, #2E2A26 50%, #221F1C 70%);
-    background-size: 200% 100%;
-    animation: shimmer 1.4s ease-in-out infinite;
-  }
-  @keyframes shimmer {
-    0% { background-position: 150% 0; }
-    100% { background-position: -50% 0; }
-  }
+            0%,
+            100% {
+                opacity: 1;
+            }
 
-  ::selection { background: #E8A33D; color: #0E0D0C; }
+            92% {
+                opacity: 1;
+            }
 
-  .focus-ring:focus-visible {
-    outline: 2px solid #E8A33D;
-    outline-offset: 3px;
-  }
+            94% {
+                opacity: 0.85;
+            }
 
-  details[open] .chev { transform: rotate(180deg); }
+            96% {
+                opacity: 1;
+            }
+        }
 
-  @media (prefers-reduced-motion: reduce) {
-    .frame-flicker, .developing, .safelight-glow, .skeleton, .logo-spin { animation: none !important; transition: none !important; }
-  }
-</style>
+        @keyframes develop {
+            0% {
+                opacity: 0;
+                filter: brightness(0.2) contrast(1.4);
+                transform: scale(1.02);
+            }
+
+            60% {
+                opacity: 1;
+                filter: brightness(1.15) contrast(1.05);
+            }
+
+            100% {
+                opacity: 1;
+                filter: brightness(1) contrast(1);
+                transform: scale(1);
+            }
+        }
+
+        .developing {
+            animation: develop 1.1s ease-out forwards;
+        }
+
+        @keyframes pulseLight {
+
+            0%,
+            100% {
+                box-shadow: 0 0 0px 0px rgba(196, 67, 43, 0.0);
+            }
+
+            50% {
+                box-shadow: 0 0 20px 3px rgba(196, 67, 43, 0.4);
+            }
+        }
+
+        .safelight-glow {
+            animation: pulseLight 2.4s ease-in-out infinite;
+        }
+
+        .logo-spin {
+            transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .logo-wrap:hover .logo-spin {
+            transform: rotate(25deg);
+        }
+
+        .skeleton {
+            background: linear-gradient(100deg, #221F1C 30%, #2E2A26 50%, #221F1C 70%);
+            background-size: 200% 100%;
+            animation: shimmer 1.4s ease-in-out infinite;
+        }
+
+        @keyframes shimmer {
+            0% {
+                background-position: 150% 0;
+            }
+
+            100% {
+                background-position: -50% 0;
+            }
+        }
+
+        ::selection {
+            background: #E8A33D;
+            color: #0E0D0C;
+        }
+
+        .focus-ring:focus-visible {
+            outline: 2px solid #E8A33D;
+            outline-offset: 3px;
+        }
+
+        details[open] .chev {
+            transform: rotate(180deg);
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+
+            .frame-flicker,
+            .developing,
+            .safelight-glow,
+            .skeleton,
+            .logo-spin {
+                animation: none !important;
+                transition: none !important;
+            }
+        }
+    </style>
 </head>
+
 <body class="grain bg-ink text-paper font-body min-h-screen">
 
-  <!-- Header -->
-  <header class="max-w-6xl mx-auto px-6 pt-8 pb-4 flex items-center justify-between">
-    <a href="#top" class="logo-wrap flex items-center gap-3 group">
-      <svg class="logo-spin w-10 h-10 shrink-0" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Thumb Lab logo, a camera aperture icon">
-        <rect width="40" height="40" rx="9" fill="#191715"/>
-        <g fill="#E8A33D">
-          <path d="M20 20 L20 5 A15 15 0 0 1 33 12.5 Z"/>
-          <path d="M20 20 L20 5 A15 15 0 0 1 33 12.5 Z" transform="rotate(60 20 20)"/>
-          <path d="M20 20 L20 5 A15 15 0 0 1 33 12.5 Z" transform="rotate(120 20 20)"/>
-          <path d="M20 20 L20 5 A15 15 0 0 1 33 12.5 Z" transform="rotate(180 20 20)"/>
-          <path d="M20 20 L20 5 A15 15 0 0 1 33 12.5 Z" transform="rotate(240 20 20)"/>
-          <path d="M20 20 L20 5 A15 15 0 0 1 33 12.5 Z" transform="rotate(300 20 20)"/>
-        </g>
-        <circle cx="20" cy="20" r="6.5" fill="#191715"/>
-        <circle cx="20" cy="20" r="2.2" fill="#C4432B" class="safelight-glow"/>
-      </svg>
-      <div>
-        <p class="font-display text-lg tracking-tight leading-none">THUMB LAB</p>
-        <p class="font-mono text-[10px] text-muted tracking-widest mt-1">DEVELOPING SINCE FRAME 001</p>
-      </div>
-    </a>
-    <nav class="hidden md:flex items-center gap-6 font-mono text-xs text-muted" aria-label="Section navigation">
-      <a href="#how-it-works" class="hover:text-amber transition-colors">How it works</a>
-      <a href="#resolutions" class="hover:text-amber transition-colors">Resolutions</a>
-      <a href="#faq" class="hover:text-amber transition-colors">FAQ</a>
-    </nav>
-  </header>
+    <!-- Header -->
+    <header class="max-w-6xl mx-auto px-6 pt-8 pb-4 flex items-center justify-between">
+        <a href="#top" class="logo-wrap flex items-center gap-3 group">
+            <svg class="logo-spin w-10 h-10 shrink-0" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"
+                role="img" aria-label="Thumb Lab logo, a camera aperture icon">
+                <rect width="40" height="40" rx="9" fill="#191715" />
+                <g fill="#E8A33D">
+                    <path d="M20 20 L20 5 A15 15 0 0 1 33 12.5 Z" />
+                    <path d="M20 20 L20 5 A15 15 0 0 1 33 12.5 Z" transform="rotate(60 20 20)" />
+                    <path d="M20 20 L20 5 A15 15 0 0 1 33 12.5 Z" transform="rotate(120 20 20)" />
+                    <path d="M20 20 L20 5 A15 15 0 0 1 33 12.5 Z" transform="rotate(180 20 20)" />
+                    <path d="M20 20 L20 5 A15 15 0 0 1 33 12.5 Z" transform="rotate(240 20 20)" />
+                    <path d="M20 20 L20 5 A15 15 0 0 1 33 12.5 Z" transform="rotate(300 20 20)" />
+                </g>
+                <circle cx="20" cy="20" r="6.5" fill="#191715" />
+                <circle cx="20" cy="20" r="2.2" fill="#C4432B" class="safelight-glow" />
+            </svg>
+            <div>
+                <p class="font-display text-lg tracking-tight leading-none">THUMB GENERATE</p>
+                <p class="font-mono text-[10px] text-muted tracking-widest mt-1">DEVELOPING SINCE FRAME 001</p>
+            </div>
+        </a>
+        <nav class="hidden md:flex items-center gap-6 font-mono text-xs text-muted" aria-label="Section navigation">
+            <a href="#how-it-works" class="hover:text-amber transition-colors">How it works</a>
+            <a href="#resolutions" class="hover:text-amber transition-colors">Resolutions</a>
+            <a href="#faq" class="hover:text-amber transition-colors">FAQ</a>
+        </nav>
+    </header>
 
-  <main id="top">
-    <!-- Hero -->
-    <section class="max-w-6xl mx-auto px-6 pt-10 pb-16">
-      <p class="font-mono text-xs text-amber tracking-widest mb-4">FREE YOUTUBE THUMBNAIL DOWNLOADER — ANY RESOLUTION</p>
-      <h1 class="font-display text-[2.4rem] sm:text-6xl leading-[1.02] max-w-3xl">
-        Pull the frame<br />that sells the click.
-      </h1>
-      <p class="text-muted max-w-xl mt-5 text-base sm:text-lg">
-        Drop a YouTube link. We pull every resolution off the negative — from a
-        pocket-sized preview up to the full 1280×720 master — ready to save.
-      </p>
+    <main id="top">
+        <!-- Hero -->
+        <section class="max-w-6xl mx-auto px-6 pt-10 pb-16">
+            <h1 class="font-mono text-xs text-amber tracking-widest mb-4">FREE YOUTUBE THUMBNAIL DOWNLOADER — ANY
+                RESOLUTION</h1>
+            <p class="font-display text-[2.4rem] sm:text-6xl leading-[1.02] max-w-3xl">
+                Pull the frame<br />that sells the click.
+            </p>
+            <p class="text-muted max-w-xl mt-5 text-base sm:text-lg">
+                Drop a YouTube link. We pull every resolution off the negative — from a
+                pocket-sized preview up to the full 1280×720 master — ready to save.
+            </p>
 
-      <!-- Input -->
-      <div class="mt-9 max-w-2xl">
-        <label for="ytUrl" class="font-mono text-[11px] text-muted tracking-widest block mb-2">PASTE VIDEO URL</label>
-        <div class="flex flex-col sm:flex-row gap-3">
-          <input
-            id="ytUrl"
-            type="text"
-            inputmode="url"
-            autocomplete="off"
-            placeholder="https://www.youtube.com/watch?v=…"
-            class="focus-ring flex-1 bg-surface border border-white/10 rounded-md px-4 py-3.5 font-mono text-sm text-paper placeholder:text-muted/60 focus:border-amber transition-colors"
-          />
-          <button
-            id="developBtn"
-            class="focus-ring shrink-0 bg-amber text-ink font-display text-sm tracking-wide px-6 py-3.5 rounded-md hover:bg-[#f0b158] active:scale-[0.98] transition-all"
-          >
-            DEVELOP →
-          </button>
+            <!-- Input -->
+            <div class="mt-9 max-w-2xl">
+                <label for="ytUrl" class="font-mono text-[11px] text-muted tracking-widest block mb-2">PASTE VIDEO
+                    URL</label>
+                <div class="flex flex-col sm:flex-row gap-3">
+                    <input id="ytUrl" type="text" inputmode="url" autocomplete="off"
+                        placeholder="https://www.youtube.com/watch?v=…"
+                        class="focus-ring flex-1 bg-surface border border-white/10 rounded-md px-4 py-3.5 font-mono text-sm text-paper placeholder:text-muted/60 focus:border-amber transition-colors" />
+                    <button id="developBtn"
+                        class="focus-ring shrink-0 bg-amber text-ink font-display text-sm tracking-wide px-6 py-3.5 rounded-md hover:bg-[#f0b158] active:scale-[0.98] transition-all">
+                        DEVELOP →
+                    </button>
+                </div>
+                <p id="errorMsg" class="font-mono text-xs text-safelight mt-2.5 hidden" role="alert"></p>
+            </div>
+        </section>
+
+        <div class="text-center">
+            <script async
+                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2179785225331533"
+                crossorigin="anonymous"></script>
+            <!-- square ads -->
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2179785225331533"
+                data-ad-slot="1507326584" data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
         </div>
-        <p id="errorMsg" class="font-mono text-xs text-safelight mt-2.5 hidden" role="alert"></p>
-      </div>
-    </section>
 
-    <!-- Contact sheet -->
-    <section id="sheetSection" class="hidden">
-      <div class="sprocket-row"></div>
-      <div class="bg-surface border-y border-white/5">
-        <div class="max-w-6xl mx-auto px-6 py-3 flex items-center justify-between">
-          <p class="font-mono text-xs text-muted">
-            ROLL <span id="rollId" class="text-amber">—</span>
-          </p>
-          <a id="watchLink" href="#" target="_blank" rel="noopener" class="font-mono text-xs text-muted hover:text-amber transition-colors underline decoration-dotted underline-offset-4">
-            open source video ↗
-          </a>
+        <!-- Contact sheet -->
+        <section id="sheetSection" class="hidden">
+            <div class="sprocket-row"></div>
+            <div class="bg-surface border-y border-white/5">
+                <div class="max-w-6xl mx-auto px-6 py-3 flex items-center justify-between">
+                    <p class="font-mono text-xs text-muted">
+                        ROLL <span id="rollId" class="text-amber">—</span>
+                    </p>
+                    <a id="watchLink" href="#" target="_blank" rel="noopener"
+                        class="font-mono text-xs text-muted hover:text-amber transition-colors underline decoration-dotted underline-offset-4">
+                        open source video ↗
+                    </a>
+                </div>
+                <div id="frameGrid"
+                    class="max-w-6xl mx-auto px-6 pb-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                    <!-- frames injected here -->
+                </div>
+            </div>
+            <div class="sprocket-row"></div>
+        </section>
+
+        <!-- Empty / instructions state -->
+        <section id="emptyState" class="max-w-6xl mx-auto px-6 pb-20">
+            <div class="border border-dashed border-white/10 rounded-lg px-6 py-14 text-center">
+                <p class="font-mono text-xs text-muted tracking-widest mb-3">CONTACT SHEET</p>
+                <p class="text-muted max-w-md mx-auto">Paste a link above and hit develop — five resolutions will line
+                    up here, largest first, each with its own print button.</p>
+            </div>
+        </section>
+
+        <!-- About / unique content for SEO -->
+        <section class="max-w-6xl mx-auto px-6 py-16 border-t border-white/5">
+            <div class="grid md:grid-cols-2 gap-10">
+                <div>
+                    <p class="font-mono text-xs text-amber tracking-widest mb-3">WHAT IS THUMB LAB</p>
+                    <h2 class="font-display text-2xl sm:text-3xl leading-tight mb-4">A darkroom for YouTube thumbnails
+                    </h2>
+                    <p class="text-muted leading-relaxed">
+                        Every YouTube video is stored with five official thumbnail sizes, but YouTube only ever
+                        shows you one at a time. Thumb Lab reads the video ID out of any link and lines up all
+                        five sizes side by side, like frames on a contact sheet, so you can compare them and
+                        save the one you need without digging through page source or browser dev tools.
+                    </p>
+                </div>
+                <div>
+                    <p class="font-mono text-xs text-amber tracking-widest mb-3">WHO IT'S FOR</p>
+                    <h2 class="font-display text-2xl sm:text-3xl leading-tight mb-4">Built for people who study
+                        thumbnails</h2>
+                    <p class="text-muted leading-relaxed">
+                        Creators pull competitor thumbnails to study composition and color before designing
+                        their own. Editors grab a high-res still to reuse in a video preview. Students and
+                        researchers save frames for presentations. Thumb Lab keeps this fast and local — nothing
+                        you paste is sent anywhere except a direct request to YouTube's own image servers.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- How it works -->
+        <section id="how-it-works" class="max-w-6xl mx-auto px-6 py-16 border-t border-white/5">
+            <p class="font-mono text-xs text-amber tracking-widest mb-3">PROCESS</p>
+            <h2 class="font-display text-2xl sm:text-3xl leading-tight mb-10">How to download a YouTube thumbnail</h2>
+            <ol class="grid sm:grid-cols-3 gap-6">
+                <li class="bg-surface border border-white/10 rounded-md p-6">
+                    <span class="font-mono text-amber text-xs tracking-widest">STEP 01</span>
+                    <p class="font-display text-lg mt-3 mb-2">Copy the link</p>
+                    <p class="text-muted text-sm leading-relaxed">Grab the URL of any YouTube video or Short from your
+                        address bar, the share button, or the app.</p>
+                </li>
+                <li class="bg-surface border border-white/10 rounded-md p-6">
+                    <span class="font-mono text-amber text-xs tracking-widest">STEP 02</span>
+                    <p class="font-display text-lg mt-3 mb-2">Paste it above</p>
+                    <p class="text-muted text-sm leading-relaxed">Drop it into the field and press Develop, hit Enter,
+                        or just paste — the sheet builds itself automatically.</p>
+                </li>
+                <li class="bg-surface border border-white/10 rounded-md p-6">
+                    <span class="font-mono text-amber text-xs tracking-widest">STEP 03</span>
+                    <p class="font-display text-lg mt-3 mb-2">Save your size</p>
+                    <p class="text-muted text-sm leading-relaxed">Pick the resolution you need and hit Save. No account,
+                        no watermark, no waiting.</p>
+                </li>
+            </ol>
+        </section>
+
+        <!-- Resolutions table -->
+        <section id="resolutions" class="max-w-6xl mx-auto px-6 py-16 border-t border-white/5">
+            <p class="font-mono text-xs text-amber tracking-widest mb-3">REFERENCE</p>
+            <h2 class="font-display text-2xl sm:text-3xl leading-tight mb-4">YouTube thumbnail resolutions explained
+            </h2>
+            <p class="text-muted max-w-2xl mb-8 leading-relaxed">
+                YouTube generates the same five file names for every upload. Not every video has the largest
+                one — Thumb Lab checks for you and drops any size that doesn't exist.
+            </p>
+            <div class="overflow-x-auto border border-white/10 rounded-md">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="bg-surface font-mono text-[11px] text-muted tracking-widest">
+                            <th class="px-4 py-3 font-medium">FILE</th>
+                            <th class="px-4 py-3 font-medium">SIZE</th>
+                            <th class="px-4 py-3 font-medium">DIMENSIONS</th>
+                            <th class="px-4 py-3 font-medium">TYPICAL USE</th>
+                        </tr>
+                    </thead>
+                    <tbody class="font-mono text-sm">
+                        <tr class="border-t border-white/5">
+                            <td class="px-4 py-3 text-amber">maxresdefault.jpg</td>
+                            <td class="px-4 py-3">Master</td>
+                            <td class="px-4 py-3">1280 × 720</td>
+                            <td class="px-4 py-3 text-muted font-body">Full HD reuse, print checks, thumbnail teardown
+                            </td>
+                        </tr>
+                        <tr class="border-t border-white/5">
+                            <td class="px-4 py-3 text-amber">sddefault.jpg</td>
+                            <td class="px-4 py-3">Standard</td>
+                            <td class="px-4 py-3">640 × 480</td>
+                            <td class="px-4 py-3 text-muted font-body">Blog embeds, moodboards</td>
+                        </tr>
+                        <tr class="border-t border-white/5">
+                            <td class="px-4 py-3 text-amber">hqdefault.jpg</td>
+                            <td class="px-4 py-3">High</td>
+                            <td class="px-4 py-3">480 × 360</td>
+                            <td class="px-4 py-3 text-muted font-body">Social previews, link cards</td>
+                        </tr>
+                        <tr class="border-t border-white/5">
+                            <td class="px-4 py-3 text-amber">mqdefault.jpg</td>
+                            <td class="px-4 py-3">Medium</td>
+                            <td class="px-4 py-3">320 × 180</td>
+                            <td class="px-4 py-3 text-muted font-body">List rows, playlist views</td>
+                        </tr>
+                        <tr class="border-t border-white/5">
+                            <td class="px-4 py-3 text-amber">default.jpg</td>
+                            <td class="px-4 py-3">Small</td>
+                            <td class="px-4 py-3">120 × 90</td>
+                            <td class="px-4 py-3 text-muted font-body">Thumbnails inside lists, favicons</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq" class="max-w-6xl mx-auto px-6 py-16 border-t border-white/5">
+            <p class="font-mono text-xs text-amber tracking-widest mb-3">FAQ</p>
+            <h2 class="font-display text-2xl sm:text-3xl leading-tight mb-8">Frequently asked questions</h2>
+            <div class="max-w-3xl space-y-3">
+                <details class="group bg-surface border border-white/10 rounded-md px-5 py-4">
+                    <summary class="flex items-center justify-between cursor-pointer font-display text-sm list-none">
+                        Is it free to download YouTube thumbnails with Thumb Lab?
+                        <span class="chev font-mono text-amber transition-transform">⌄</span>
+                    </summary>
+                    <p class="text-muted text-sm mt-3 leading-relaxed">Yes. Thumb Lab is free, requires no sign-up, and
+                        runs entirely in your browser.</p>
+                </details>
+                <details class="group bg-surface border border-white/10 rounded-md px-5 py-4">
+                    <summary class="flex items-center justify-between cursor-pointer font-display text-sm list-none">
+                        What's the highest resolution I can get?
+                        <span class="chev font-mono text-amber transition-transform">⌄</span>
+                    </summary>
+                    <p class="text-muted text-sm mt-3 leading-relaxed">Most videos have a 1280×720 master image. If a
+                        channel hasn't uploaded one, Thumb Lab automatically removes it from the sheet and shows the
+                        next largest size available.</p>
+                </details>
+                <details class="group bg-surface border border-white/10 rounded-md px-5 py-4">
+                    <summary class="flex items-center justify-between cursor-pointer font-display text-sm list-none">
+                        Does it work with YouTube Shorts?
+                        <span class="chev font-mono text-amber transition-transform">⌄</span>
+                    </summary>
+                    <p class="text-muted text-sm mt-3 leading-relaxed">Yes. Paste any youtube.com/shorts/ link and Thumb
+                        Lab pulls the same five sizes as a regular video.</p>
+                </details>
+                <details class="group bg-surface border border-white/10 rounded-md px-5 py-4">
+                    <summary class="flex items-center justify-between cursor-pointer font-display text-sm list-none">
+                        Do I need to install anything?
+                        <span class="chev font-mono text-amber transition-transform">⌄</span>
+                    </summary>
+                    <p class="text-muted text-sm mt-3 leading-relaxed">No. It works directly in your browser tab and no
+                        images are uploaded to a server — everything happens client-side.</p>
+                </details>
+                <details class="group bg-surface border border-white/10 rounded-md px-5 py-4">
+                    <summary class="flex items-center justify-between cursor-pointer font-display text-sm list-none">
+                        Is it legal to download YouTube thumbnails?
+                        <span class="chev font-mono text-amber transition-transform">⌄</span>
+                    </summary>
+                    <p class="text-muted text-sm mt-3 leading-relaxed">Thumbnails carry the same copyright as the video
+                        they belong to. Saving one for reference, moodboards, or personal analysis is generally fine,
+                        but reusing someone else's thumbnail in your own published content without permission isn't
+                        advisable.</p>
+                </details>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-white/5">
+        <div class="max-w-6xl mx-auto px-6 py-14 grid sm:grid-cols-2 md:grid-cols-4 gap-10">
+            <div class="md:col-span-2">
+                <div class="flex items-center gap-2.5 mb-3">
+                    <svg class="w-7 h-7 shrink-0" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true">
+                        <rect width="40" height="40" rx="9" fill="#191715" />
+                        <g fill="#E8A33D">
+                            <path d="M20 20 L20 5 A15 15 0 0 1 33 12.5 Z" />
+                            <path d="M20 20 L20 5 A15 15 0 0 1 33 12.5 Z" transform="rotate(60 20 20)" />
+                            <path d="M20 20 L20 5 A15 15 0 0 1 33 12.5 Z" transform="rotate(120 20 20)" />
+                            <path d="M20 20 L20 5 A15 15 0 0 1 33 12.5 Z" transform="rotate(180 20 20)" />
+                            <path d="M20 20 L20 5 A15 15 0 0 1 33 12.5 Z" transform="rotate(240 20 20)" />
+                            <path d="M20 20 L20 5 A15 15 0 0 1 33 12.5 Z" transform="rotate(300 20 20)" />
+                        </g>
+                        <circle cx="20" cy="20" r="6.5" fill="#191715" />
+                        <circle cx="20" cy="20" r="2.2" fill="#C4432B" />
+                    </svg>
+                    <p class="font-display text-base">THUMB GENERATE</p>
+                </div>
+                <p class="text-muted text-sm max-w-sm leading-relaxed">A free tool for pulling official YouTube
+                    thumbnail images in every resolution. Nothing you paste is stored — each request goes straight to
+                    YouTube's own image servers.</p>
+            </div>
+            <div>
+                <p class="font-mono text-[11px] text-muted tracking-widest mb-3">EXPLORE</p>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#top" class="text-paper/80 hover:text-amber transition-colors">Downloader</a></li>
+                    <li><a href="#how-it-works" class="text-paper/80 hover:text-amber transition-colors">How it
+                            works</a></li>
+                    <li><a href="#resolutions" class="text-paper/80 hover:text-amber transition-colors">Resolutions</a>
+                    </li>
+                    <li><a href="#faq" class="text-paper/80 hover:text-amber transition-colors">FAQ</a></li>
+                </ul>
+            </div>
+            <div>
+                <p class="font-mono text-[11px] text-muted tracking-widest mb-3">LEGAL</p>
+                <ul class="space-y-2 text-sm text-muted leading-relaxed">
+                    <li>Not affiliated with YouTube or Google.</li>
+                    <li>Thumbnails belong to their respective owners — use responsibly.</li>
+                </ul>
+            </div>
         </div>
-        <div id="frameGrid" class="max-w-6xl mx-auto px-6 pb-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          <!-- frames injected here -->
+        <div
+            class="max-w-6xl mx-auto px-6 py-5 border-t border-white/5 flex flex-col sm:flex-row justify-between gap-2">
+            <p class="font-mono text-[11px] text-muted">© <span id="year"></span> Thumb Lab. All rights reserved.</p>
+            <p class="font-mono text-[11px] text-muted">Made for creators who obsess over the first frame.</p>
         </div>
-      </div>
-      <div class="sprocket-row"></div>
-    </section>
+    </footer>
 
-    <!-- Empty / instructions state -->
-    <section id="emptyState" class="max-w-6xl mx-auto px-6 pb-20">
-      <div class="border border-dashed border-white/10 rounded-lg px-6 py-14 text-center">
-        <p class="font-mono text-xs text-muted tracking-widest mb-3">CONTACT SHEET</p>
-        <p class="text-muted max-w-md mx-auto">Paste a link above and hit develop — five resolutions will line up here, largest first, each with its own print button.</p>
-      </div>
-    </section>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
 
-    <!-- About / unique content for SEO -->
-    <section class="max-w-6xl mx-auto px-6 py-16 border-t border-white/5">
-      <div class="grid md:grid-cols-2 gap-10">
-        <div>
-          <p class="font-mono text-xs text-amber tracking-widest mb-3">WHAT IS THUMB LAB</p>
-          <h2 class="font-display text-2xl sm:text-3xl leading-tight mb-4">A darkroom for YouTube thumbnails</h2>
-          <p class="text-muted leading-relaxed">
-            Every YouTube video is stored with five official thumbnail sizes, but YouTube only ever
-            shows you one at a time. Thumb Lab reads the video ID out of any link and lines up all
-            five sizes side by side, like frames on a contact sheet, so you can compare them and
-            save the one you need without digging through page source or browser dev tools.
-          </p>
-        </div>
-        <div>
-          <p class="font-mono text-xs text-amber tracking-widest mb-3">WHO IT'S FOR</p>
-          <h2 class="font-display text-2xl sm:text-3xl leading-tight mb-4">Built for people who study thumbnails</h2>
-          <p class="text-muted leading-relaxed">
-            Creators pull competitor thumbnails to study composition and color before designing
-            their own. Editors grab a high-res still to reuse in a video preview. Students and
-            researchers save frames for presentations. Thumb Lab keeps this fast and local — nothing
-            you paste is sent anywhere except a direct request to YouTube's own image servers.
-          </p>
-        </div>
-      </div>
-    </section>
+        const RESOLUTIONS = [
+            { file: 'maxresdefault.jpg', label: 'MASTER', dims: '1280 × 720' },
+            { file: 'sddefault.jpg', label: 'STANDARD', dims: '640 × 480' },
+            { file: 'hqdefault.jpg', label: 'HIGH', dims: '480 × 360' },
+            { file: 'mqdefault.jpg', label: 'MEDIUM', dims: '320 × 180' },
+            { file: 'default.jpg', label: 'SMALL', dims: '120 × 90' },
+        ];
 
-    <!-- How it works -->
-    <section id="how-it-works" class="max-w-6xl mx-auto px-6 py-16 border-t border-white/5">
-      <p class="font-mono text-xs text-amber tracking-widest mb-3">PROCESS</p>
-      <h2 class="font-display text-2xl sm:text-3xl leading-tight mb-10">How to download a YouTube thumbnail</h2>
-      <ol class="grid sm:grid-cols-3 gap-6">
-        <li class="bg-surface border border-white/10 rounded-md p-6">
-          <span class="font-mono text-amber text-xs tracking-widest">STEP 01</span>
-          <p class="font-display text-lg mt-3 mb-2">Copy the link</p>
-          <p class="text-muted text-sm leading-relaxed">Grab the URL of any YouTube video or Short from your address bar, the share button, or the app.</p>
-        </li>
-        <li class="bg-surface border border-white/10 rounded-md p-6">
-          <span class="font-mono text-amber text-xs tracking-widest">STEP 02</span>
-          <p class="font-display text-lg mt-3 mb-2">Paste it above</p>
-          <p class="text-muted text-sm leading-relaxed">Drop it into the field and press Develop, hit Enter, or just paste — the sheet builds itself automatically.</p>
-        </li>
-        <li class="bg-surface border border-white/10 rounded-md p-6">
-          <span class="font-mono text-amber text-xs tracking-widest">STEP 03</span>
-          <p class="font-display text-lg mt-3 mb-2">Save your size</p>
-          <p class="text-muted text-sm leading-relaxed">Pick the resolution you need and hit Save. No account, no watermark, no waiting.</p>
-        </li>
-      </ol>
-    </section>
+        const urlInput = document.getElementById('ytUrl');
+        const developBtn = document.getElementById('developBtn');
+        const errorMsg = document.getElementById('errorMsg');
+        const sheetSection = document.getElementById('sheetSection');
+        const emptyState = document.getElementById('emptyState');
+        const frameGrid = document.getElementById('frameGrid');
+        const rollId = document.getElementById('rollId');
+        const watchLink = document.getElementById('watchLink');
 
-    <!-- Resolutions table -->
-    <section id="resolutions" class="max-w-6xl mx-auto px-6 py-16 border-t border-white/5">
-      <p class="font-mono text-xs text-amber tracking-widest mb-3">REFERENCE</p>
-      <h2 class="font-display text-2xl sm:text-3xl leading-tight mb-4">YouTube thumbnail resolutions explained</h2>
-      <p class="text-muted max-w-2xl mb-8 leading-relaxed">
-        YouTube generates the same five file names for every upload. Not every video has the largest
-        one — Thumb Lab checks for you and drops any size that doesn't exist.
-      </p>
-      <div class="overflow-x-auto border border-white/10 rounded-md">
-        <table class="w-full text-left border-collapse">
-          <thead>
-            <tr class="bg-surface font-mono text-[11px] text-muted tracking-widest">
-              <th class="px-4 py-3 font-medium">FILE</th>
-              <th class="px-4 py-3 font-medium">SIZE</th>
-              <th class="px-4 py-3 font-medium">DIMENSIONS</th>
-              <th class="px-4 py-3 font-medium">TYPICAL USE</th>
-            </tr>
-          </thead>
-          <tbody class="font-mono text-sm">
-            <tr class="border-t border-white/5">
-              <td class="px-4 py-3 text-amber">maxresdefault.jpg</td>
-              <td class="px-4 py-3">Master</td>
-              <td class="px-4 py-3">1280 × 720</td>
-              <td class="px-4 py-3 text-muted font-body">Full HD reuse, print checks, thumbnail teardown</td>
-            </tr>
-            <tr class="border-t border-white/5">
-              <td class="px-4 py-3 text-amber">sddefault.jpg</td>
-              <td class="px-4 py-3">Standard</td>
-              <td class="px-4 py-3">640 × 480</td>
-              <td class="px-4 py-3 text-muted font-body">Blog embeds, moodboards</td>
-            </tr>
-            <tr class="border-t border-white/5">
-              <td class="px-4 py-3 text-amber">hqdefault.jpg</td>
-              <td class="px-4 py-3">High</td>
-              <td class="px-4 py-3">480 × 360</td>
-              <td class="px-4 py-3 text-muted font-body">Social previews, link cards</td>
-            </tr>
-            <tr class="border-t border-white/5">
-              <td class="px-4 py-3 text-amber">mqdefault.jpg</td>
-              <td class="px-4 py-3">Medium</td>
-              <td class="px-4 py-3">320 × 180</td>
-              <td class="px-4 py-3 text-muted font-body">List rows, playlist views</td>
-            </tr>
-            <tr class="border-t border-white/5">
-              <td class="px-4 py-3 text-amber">default.jpg</td>
-              <td class="px-4 py-3">Small</td>
-              <td class="px-4 py-3">120 × 90</td>
-              <td class="px-4 py-3 text-muted font-body">Thumbnails inside lists, favicons</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
+        function extractVideoId(input) {
+            const trimmed = input.trim();
+            const patterns = [
+                /(?:youtube\.com\/watch\?v=)([a-zA-Z0-9_-]{11})/,
+                /(?:youtube\.com\/shorts\/)([a-zA-Z0-9_-]{11})/,
+                /(?:youtube\.com\/embed\/)([a-zA-Z0-9_-]{11})/,
+                /(?:youtu\.be\/)([a-zA-Z0-9_-]{11})/,
+                /^([a-zA-Z0-9_-]{11})$/,
+            ];
+            for (const p of patterns) {
+                const m = trimmed.match(p);
+                if (m) return m[1];
+            }
+            return null;
+        }
 
-    <!-- FAQ -->
-    <section id="faq" class="max-w-6xl mx-auto px-6 py-16 border-t border-white/5">
-      <p class="font-mono text-xs text-amber tracking-widest mb-3">FAQ</p>
-      <h2 class="font-display text-2xl sm:text-3xl leading-tight mb-8">Frequently asked questions</h2>
-      <div class="max-w-3xl space-y-3">
-        <details class="group bg-surface border border-white/10 rounded-md px-5 py-4">
-          <summary class="flex items-center justify-between cursor-pointer font-display text-sm list-none">
-            Is it free to download YouTube thumbnails with Thumb Lab?
-            <span class="chev font-mono text-amber transition-transform">⌄</span>
-          </summary>
-          <p class="text-muted text-sm mt-3 leading-relaxed">Yes. Thumb Lab is free, requires no sign-up, and runs entirely in your browser.</p>
-        </details>
-        <details class="group bg-surface border border-white/10 rounded-md px-5 py-4">
-          <summary class="flex items-center justify-between cursor-pointer font-display text-sm list-none">
-            What's the highest resolution I can get?
-            <span class="chev font-mono text-amber transition-transform">⌄</span>
-          </summary>
-          <p class="text-muted text-sm mt-3 leading-relaxed">Most videos have a 1280×720 master image. If a channel hasn't uploaded one, Thumb Lab automatically removes it from the sheet and shows the next largest size available.</p>
-        </details>
-        <details class="group bg-surface border border-white/10 rounded-md px-5 py-4">
-          <summary class="flex items-center justify-between cursor-pointer font-display text-sm list-none">
-            Does it work with YouTube Shorts?
-            <span class="chev font-mono text-amber transition-transform">⌄</span>
-          </summary>
-          <p class="text-muted text-sm mt-3 leading-relaxed">Yes. Paste any youtube.com/shorts/ link and Thumb Lab pulls the same five sizes as a regular video.</p>
-        </details>
-        <details class="group bg-surface border border-white/10 rounded-md px-5 py-4">
-          <summary class="flex items-center justify-between cursor-pointer font-display text-sm list-none">
-            Do I need to install anything?
-            <span class="chev font-mono text-amber transition-transform">⌄</span>
-          </summary>
-          <p class="text-muted text-sm mt-3 leading-relaxed">No. It works directly in your browser tab and no images are uploaded to a server — everything happens client-side.</p>
-        </details>
-        <details class="group bg-surface border border-white/10 rounded-md px-5 py-4">
-          <summary class="flex items-center justify-between cursor-pointer font-display text-sm list-none">
-            Is it legal to download YouTube thumbnails?
-            <span class="chev font-mono text-amber transition-transform">⌄</span>
-          </summary>
-          <p class="text-muted text-sm mt-3 leading-relaxed">Thumbnails carry the same copyright as the video they belong to. Saving one for reference, moodboards, or personal analysis is generally fine, but reusing someone else's thumbnail in your own published content without permission isn't advisable.</p>
-        </details>
-      </div>
-    </section>
-  </main>
+        function showError(message) {
+            errorMsg.textContent = message;
+            errorMsg.classList.remove('hidden');
+        }
+        function clearError() {
+            errorMsg.classList.add('hidden');
+            errorMsg.textContent = '';
+        }
 
-  <!-- Footer -->
-  <footer class="border-t border-white/5">
-    <div class="max-w-6xl mx-auto px-6 py-14 grid sm:grid-cols-2 md:grid-cols-4 gap-10">
-      <div class="md:col-span-2">
-        <div class="flex items-center gap-2.5 mb-3">
-          <svg class="w-7 h-7 shrink-0" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <rect width="40" height="40" rx="9" fill="#191715"/>
-            <g fill="#E8A33D">
-              <path d="M20 20 L20 5 A15 15 0 0 1 33 12.5 Z"/>
-              <path d="M20 20 L20 5 A15 15 0 0 1 33 12.5 Z" transform="rotate(60 20 20)"/>
-              <path d="M20 20 L20 5 A15 15 0 0 1 33 12.5 Z" transform="rotate(120 20 20)"/>
-              <path d="M20 20 L20 5 A15 15 0 0 1 33 12.5 Z" transform="rotate(180 20 20)"/>
-              <path d="M20 20 L20 5 A15 15 0 0 1 33 12.5 Z" transform="rotate(240 20 20)"/>
-              <path d="M20 20 L20 5 A15 15 0 0 1 33 12.5 Z" transform="rotate(300 20 20)"/>
-            </g>
-            <circle cx="20" cy="20" r="6.5" fill="#191715"/>
-            <circle cx="20" cy="20" r="2.2" fill="#C4432B"/>
-          </svg>
-          <p class="font-display text-base">THUMB LAB</p>
-        </div>
-        <p class="text-muted text-sm max-w-sm leading-relaxed">A free tool for pulling official YouTube thumbnail images in every resolution. Nothing you paste is stored — each request goes straight to YouTube's own image servers.</p>
-      </div>
-      <div>
-        <p class="font-mono text-[11px] text-muted tracking-widest mb-3">EXPLORE</p>
-        <ul class="space-y-2 text-sm">
-          <li><a href="#top" class="text-paper/80 hover:text-amber transition-colors">Downloader</a></li>
-          <li><a href="#how-it-works" class="text-paper/80 hover:text-amber transition-colors">How it works</a></li>
-          <li><a href="#resolutions" class="text-paper/80 hover:text-amber transition-colors">Resolutions</a></li>
-          <li><a href="#faq" class="text-paper/80 hover:text-amber transition-colors">FAQ</a></li>
-        </ul>
-      </div>
-      <div>
-        <p class="font-mono text-[11px] text-muted tracking-widest mb-3">LEGAL</p>
-        <ul class="space-y-2 text-sm text-muted leading-relaxed">
-          <li>Not affiliated with YouTube or Google.</li>
-          <li>Thumbnails belong to their respective owners — use responsibly.</li>
-        </ul>
-      </div>
-    </div>
-    <div class="max-w-6xl mx-auto px-6 py-5 border-t border-white/5 flex flex-col sm:flex-row justify-between gap-2">
-      <p class="font-mono text-[11px] text-muted">© <span id="year"></span> Thumb Lab. All rights reserved.</p>
-      <p class="font-mono text-[11px] text-muted">Made for creators who obsess over the first frame.</p>
-    </div>
-  </footer>
+        function frameCard(res, videoId, index) {
+            const src = `https://img.youtube.com/vi/${videoId}/${res.file}`;
+            const wrap = document.createElement('div');
+            wrap.className = 'bg-ink border border-white/10 rounded-md overflow-hidden group';
+            wrap.style.animationDelay = `${index * 90}ms`;
 
-<script>
-  document.getElementById('year').textContent = new Date().getFullYear();
-
-  const RESOLUTIONS = [
-    { file: 'maxresdefault.jpg', label: 'MASTER',  dims: '1280 × 720' },
-    { file: 'sddefault.jpg',     label: 'STANDARD', dims: '640 × 480'  },
-    { file: 'hqdefault.jpg',     label: 'HIGH',      dims: '480 × 360'  },
-    { file: 'mqdefault.jpg',     label: 'MEDIUM',    dims: '320 × 180'  },
-    { file: 'default.jpg',       label: 'SMALL',     dims: '120 × 90'   },
-  ];
-
-  const urlInput   = document.getElementById('ytUrl');
-  const developBtn = document.getElementById('developBtn');
-  const errorMsg   = document.getElementById('errorMsg');
-  const sheetSection = document.getElementById('sheetSection');
-  const emptyState = document.getElementById('emptyState');
-  const frameGrid  = document.getElementById('frameGrid');
-  const rollId     = document.getElementById('rollId');
-  const watchLink  = document.getElementById('watchLink');
-
-  function extractVideoId(input) {
-    const trimmed = input.trim();
-    const patterns = [
-      /(?:youtube\.com\/watch\?v=)([a-zA-Z0-9_-]{11})/,
-      /(?:youtube\.com\/shorts\/)([a-zA-Z0-9_-]{11})/,
-      /(?:youtube\.com\/embed\/)([a-zA-Z0-9_-]{11})/,
-      /(?:youtu\.be\/)([a-zA-Z0-9_-]{11})/,
-      /^([a-zA-Z0-9_-]{11})$/,
-    ];
-    for (const p of patterns) {
-      const m = trimmed.match(p);
-      if (m) return m[1];
-    }
-    return null;
-  }
-
-  function showError(message) {
-    errorMsg.textContent = message;
-    errorMsg.classList.remove('hidden');
-  }
-  function clearError() {
-    errorMsg.classList.add('hidden');
-    errorMsg.textContent = '';
-  }
-
-  function frameCard(res, videoId, index) {
-    const src = `https://img.youtube.com/vi/${videoId}/${res.file}`;
-    const wrap = document.createElement('div');
-    wrap.className = 'bg-ink border border-white/10 rounded-md overflow-hidden group';
-    wrap.style.animationDelay = `${index * 90}ms`;
-
-    wrap.innerHTML = `
+            wrap.innerHTML = `
       <div class="relative aspect-video bg-surface2 overflow-hidden">
         <div class="skeleton absolute inset-0"></div>
         <img
@@ -547,76 +656,77 @@
       </div>
     `;
 
-    const img = wrap.querySelector('.thumb-img');
-    const skeletonEl = wrap.querySelector('.skeleton');
-    const dlBtn = wrap.querySelector('.dl-btn');
+            const img = wrap.querySelector('.thumb-img');
+            const skeletonEl = wrap.querySelector('.skeleton');
+            const dlBtn = wrap.querySelector('.dl-btn');
 
-    img.addEventListener('load', () => {
-      skeletonEl.remove();
-      if (res.file === 'maxresdefault.jpg' && img.naturalWidth <= 120) {
-        wrap.remove();
-      }
-    });
-    img.addEventListener('error', () => {
-      wrap.remove();
-    });
+            img.addEventListener('load', () => {
+                skeletonEl.remove();
+                if (res.file === 'maxresdefault.jpg' && img.naturalWidth <= 120) {
+                    wrap.remove();
+                }
+            });
+            img.addEventListener('error', () => {
+                wrap.remove();
+            });
 
-    dlBtn.addEventListener('click', async () => {
-      dlBtn.textContent = '…';
-      try {
-        const response = await fetch(src, { mode: 'cors' });
-        if (!response.ok) throw new Error('fetch failed');
-        const blob = await response.blob();
-        const objectUrl = URL.createObjectURL(blob);
-        const a = document.createElement('a');
-        a.href = objectUrl;
-        a.download = `${videoId}-${res.label.toLowerCase()}.jpg`;
-        document.body.appendChild(a);
-        a.click();
-        a.remove();
-        URL.revokeObjectURL(objectUrl);
-        dlBtn.textContent = 'SAVED';
-      } catch (e) {
-        window.open(src, '_blank', 'noopener');
-        dlBtn.textContent = 'OPENED';
-      }
-      setTimeout(() => { dlBtn.textContent = 'SAVE'; }, 1600);
-    });
+            dlBtn.addEventListener('click', async () => {
+                dlBtn.textContent = '…';
+                try {
+                    const response = await fetch(src, { mode: 'cors' });
+                    if (!response.ok) throw new Error('fetch failed');
+                    const blob = await response.blob();
+                    const objectUrl = URL.createObjectURL(blob);
+                    const a = document.createElement('a');
+                    a.href = objectUrl;
+                    a.download = `${videoId}-${res.label.toLowerCase()}.jpg`;
+                    document.body.appendChild(a);
+                    a.click();
+                    a.remove();
+                    URL.revokeObjectURL(objectUrl);
+                    dlBtn.textContent = 'SAVED';
+                } catch (e) {
+                    window.open(src, '_blank', 'noopener');
+                    dlBtn.textContent = 'OPENED';
+                }
+                setTimeout(() => { dlBtn.textContent = 'SAVE'; }, 1600);
+            });
 
-    return wrap;
-  }
+            return wrap;
+        }
 
-  function develop() {
-    clearError();
-    const videoId = extractVideoId(urlInput.value);
+        function develop() {
+            clearError();
+            const videoId = extractVideoId(urlInput.value);
 
-    if (!urlInput.value.trim()) {
-      showError('Paste a YouTube link first.');
-      return;
-    }
-    if (!videoId) {
-      showError('Could not read a video ID from that link. Try the full youtube.com/watch?v= URL.');
-      return;
-    }
+            if (!urlInput.value.trim()) {
+                showError('Paste a YouTube link first.');
+                return;
+            }
+            if (!videoId) {
+                showError('Could not read a video ID from that link. Try the full youtube.com/watch?v= URL.');
+                return;
+            }
 
-    frameGrid.innerHTML = '';
-    RESOLUTIONS.forEach((res, i) => {
-      frameGrid.appendChild(frameCard(res, videoId, i));
-    });
+            frameGrid.innerHTML = '';
+            RESOLUTIONS.forEach((res, i) => {
+                frameGrid.appendChild(frameCard(res, videoId, i));
+            });
 
-    rollId.textContent = videoId;
-    watchLink.href = `https://www.youtube.com/watch?v=${videoId}`;
-    sheetSection.classList.remove('hidden');
-    emptyState.classList.add('hidden');
-  }
+            rollId.textContent = videoId;
+            watchLink.href = `https://www.youtube.com/watch?v=${videoId}`;
+            sheetSection.classList.remove('hidden');
+            emptyState.classList.add('hidden');
+        }
 
-  developBtn.addEventListener('click', develop);
-  urlInput.addEventListener('keydown', (e) => {
-    if (e.key === 'Enter') develop();
-  });
-  urlInput.addEventListener('paste', () => {
-    setTimeout(develop, 50);
-  });
-</script>
+        developBtn.addEventListener('click', develop);
+        urlInput.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') develop();
+        });
+        urlInput.addEventListener('paste', () => {
+            setTimeout(develop, 50);
+        });
+    </script>
 </body>
+
 </html>
