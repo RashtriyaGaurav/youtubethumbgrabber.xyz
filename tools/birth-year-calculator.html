@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birth Year Calculator - Find Birth Year From Age</title>
+    <meta name="description"
+        content="Enter an age and a reference date to find the possible birth year — or two adjacent birth years when the birthday hasn't been confirmed. Free, instant, no sign-up.">
+    <meta name="robots" content="index, follow">
+
+    <!-- Assumed to match your /tools/ URL pattern — update if your final path differs -->
+    <link rel="canonical" href="https://youtubethumbgrabber.xyz/tools/birth-year-calculator.html">
+
+    <meta property="og:title" content="Birth Year Calculator - Find Birth Year From Age">
+    <meta property="og:description"
+        content="Enter an age and a reference date to get the possible birth date range and matching birth year(s).">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://youtubethumbgrabber.xyz/tools/birth-year-calculator.html">
+    <meta property="og:image" content="https://www.youtubethumbgrabber.xyz/images/logo.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Birth Year Calculator - Find Birth Year From Age">
+    <meta name="twitter:description"
+        content="Enter an age and a reference date to get the possible birth date range and matching birth year(s).">
+    <meta name="twitter:image" content="https://www.youtubethumbgrabber.xyz/images/logo.png">
+    <meta name="theme-color" content="#EA580C">
+
+    <link rel="icon" href="/images/logo-modified.png" sizes="any">
+    <link rel="apple-touch-icon" href="/images/logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Geomini:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Space+Grotesk:wght@300..700&display=swap">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Birth Year Calculator",
+      "url": "https://youtubethumbgrabber.xyz/tools/birth-year-calculator.html",
+      "applicationCategory": "UtilityApplication",
+      "operatingSystem": "Any (runs in browser)",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+      "description": "Calculate the possible birth date range and matching birth year(s) from a completed age and a reference date."
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://youtubethumbgrabber.xyz/" },
+        { "@type": "ListItem", "position": 2, "name": "Tools", "item": "https://youtubethumbgrabber.xyz/tools/" },
+        { "@type": "ListItem", "position": 3, "name": "Birth Year Calculator", "item": "https://youtubethumbgrabber.xyz/tools/birth-year-calculator.html" }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Why does the calculator give two possible birth years instead of one?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Because completed age alone doesn't tell you whether the birthday has already happened this year. Someone who is 18 today could have been born in either of two adjacent years, depending on which side of their birthday the reference date falls on — so the calculator returns the full range rather than guessing." }
+        },
+        {
+          "@type": "Question",
+          "name": "What reference date should I use?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Use the date the age applies to. For 'how old am I right now,' leave it as today. For something like a school cutoff, legal age requirement, or historical record, use that specific date instead." }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use a date in the past or future as the reference date?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. Any date works — past, present, or future — as long as it's the date the stated age is measured from." }
+        },
+        {
+          "@type": "Question",
+          "name": "Is this the same as an age calculator?",
+          "acceptedAnswer": { "@type": "Answer", "text": "It's the reverse. An age calculator takes a known birth date and tells you the current age. This tool takes a known age and works backward to the range of possible birth dates." }
+        },
+        {
+          "@type": "Question",
+          "name": "Does this account for leap years?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes — the date math accounts for leap years automatically, including adjusting February 29 birthdates in non-leap years." }
+        }
+      ]
+    }
+    </script>
+</head>
+
+<body style="font-family: 'Google Sans', 'Space Grotesk', 'Open Sans', sans-serif;" class="text-zinc-800">
+    <header class="flex justify-between max-w-6xl mx-auto items-center px-4 py-6">
+        <a href="/" class="">
+            <img src="/images/logo.png" alt="youtubethumbgrabber.xyz"
+                class="h-12 border border-zinc-300 rounded-xl shadow-lg hover:scale-105 transition duration-300">
+        </a>
+        <nav>
+            <a href="/pages/contact.html"
+                class="inline-flex py-2.5 sm:py-3 px-4 border border-zinc-300 rounded-2xl shadow-lg hover:scale-105 transition duration-300">
+                Contact Us
+            </a>
+        </nav>
+    </header>
+
+    <nav aria-label="Breadcrumb" class="max-w-6xl mx-auto px-4 pt-4">
+        <ol class="flex gap-2 text-xs font-mono text-zinc-500">
+            <li><a href="/" class="hover:text-orange-600">Home</a></li>
+            <li>/</li>
+            <li><a href="/tools/" class="hover:text-orange-600">Tools</a></li>
+            <li>/</li>
+            <li class="text-zinc-800">Birth Year Calculator</li>
+        </ol>
+    </nav>
+
+    <section class="max-w-6xl mx-auto px-4 pt-6">
+        <h1 class="font-bold text-4xl sm:text-5xl">Birth Year Calculator <br> (Find Birth Year From Age)</h1>
+        <p class="pt-4 text-lg text-zinc-600 max-w-2xl">Enter an age and a reference date, and get the exact range
+            of possible birth dates — plus the matching birth year, or the two adjacent years it could fall
+            between.</p>
+    </section>
+
+     <div class="max-w-6xl mx-auto mb-10">
+        <script async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2179785225331533"
+            crossorigin="anonymous"></script>
+        <!-- square ads -->
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2179785225331533"
+            data-ad-slot="1507326584" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+
+    <section class="max-w-3xl mx-auto px-4 mt-9">
+        <div class="border border-zinc-300 rounded-2xl shadow-lg p-6 sm:p-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                <div>
+                    <label for="ageInput" class="pl-1 text-[11px] text-zinc-500 tracking-widest block mb-2">COMPLETED
+                        AGE (YEARS)</label>
+                    <input id="ageInput" type="number" min="0" max="130" inputmode="numeric" placeholder="e.g. 18"
+                        class="focus-ring w-full border border-zinc-300 rounded-2xl px-4 py-3.5 shadow-lg text-sm" />
+                </div>
+                <div>
+                    <label for="refDateInput" class="pl-1 text-[11px] text-zinc-500 tracking-widest block mb-2">
+                        REFERENCE DATE (LEAVE BLANK FOR TODAY)</label>
+                    <input id="refDateInput" type="date"
+                        class="focus-ring w-full border border-zinc-300 rounded-2xl px-4 py-3.5 shadow-lg text-sm" />
+                </div>
+            </div>
+
+            <button id="calcBtn"
+                class="mt-6 w-full sm:w-auto px-6 py-3.5 rounded-2xl
+                       bg-orange-600/80 border border-orange-500/30
+                       text-white shadow-lg font-semibold
+                       hover:bg-orange-700 hover:border-orange-400/40
+                       hover:shadow-xl hover:scale-105
+                       transition-all duration-300">
+                Calculate Birth Year
+            </button>
+
+            <p id="calcError" class="text-xs text-orange-600 mt-3 hidden" role="alert"></p>
+
+            <div id="resultBox" class="hidden mt-8 space-y-5">
+                <div class="border border-zinc-300 rounded-2xl p-6 text-center bg-zinc-50">
+                    <p class="font-mono text-xs text-zinc-500 tracking-widest mb-2">MATCHING BIRTH YEAR(S)</p>
+                    <p id="yearResult" class="text-4xl font-bold text-orange-600">—</p>
+                </div>
+                <div class="border border-zinc-300 rounded-2xl p-6 bg-zinc-50">
+                    <p class="font-mono text-xs text-zinc-500 tracking-widest mb-2 text-center">POSSIBLE BIRTH DATE
+                        RANGE</p>
+                    <p id="rangeResult" class="text-lg font-semibold text-center">—</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="max-w-6xl mx-auto px-4 py-20 space-y-20">
+
+        <!-- What is this -->
+        <section aria-labelledby="what-is-this">
+            <h2 id="what-is-this" class="font-bold text-3xl mb-3">Why age alone doesn't pin down a birth year</h2>
+            <p class="text-zinc-600 max-w-2xl">When someone tells you they're 18, that's only true for part of the
+                year — the part after their birthday and before their next one. Without knowing the month and day,
+                that single age can line up with two different birth years, depending on which side of their
+                birthday the reference date falls on. This calculator works out that full range instead of guessing
+                at one year.</p>
+        </section>
+
+        <!-- Formula -->
+        <section aria-labelledby="formula">
+            <h2 id="formula" class="font-bold text-3xl mb-3">How the calculation works</h2>
+            <p class="text-zinc-600 max-w-2xl mb-6">The tool above does this automatically, but here's the logic
+                behind it:</p>
+            <div class="border border-zinc-300 rounded-2xl shadow-lg p-6 font-mono text-sm max-w-2xl bg-zinc-50 space-y-2">
+                <p>Latest possible birth date = Reference Date − Age (years)</p>
+                <p>Earliest possible birth date = Reference Date − (Age + 1) years + 1 day</p>
+            </div>
+            <p class="text-zinc-600 max-w-2xl mt-6">For example, someone who is a completed 18 years old on July 29,
+                2026 could have been born any time from July 30, 2007 through July 29, 2008 — so their birth year is
+                <strong>2007 or 2008</strong>, depending on the exact date.</p>
+        </section>
+
+        <!-- How to use -->
+        <section aria-labelledby="how-to-use">
+            <h2 id="how-to-use" class="font-bold text-3xl mb-3">How to use it</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-5 mt-6">
+                <div class="border border-zinc-300 rounded-2xl p-6 shadow-lg">
+                    <p class="font-mono text-xs text-orange-600 mb-2">STEP 1</p>
+                    <h3 class="font-bold text-lg mb-2">Enter the age</h3>
+                    <p class="text-zinc-600 text-sm">Use the completed age in years — the age the person has already
+                        turned, not the age they're turning next.</p>
+                </div>
+                <div class="border border-zinc-300 rounded-2xl p-6 shadow-lg">
+                    <p class="font-mono text-xs text-orange-600 mb-2">STEP 2</p>
+                    <h3 class="font-bold text-lg mb-2">Set the reference date</h3>
+                    <p class="text-zinc-600 text-sm">Leave it blank for today, or set it to whatever date the age was
+                        measured from — a form, a record, or an event date.</p>
+                </div>
+                <div class="border border-zinc-300 rounded-2xl p-6 shadow-lg">
+                    <p class="font-mono text-xs text-orange-600 mb-2">STEP 3</p>
+                    <h3 class="font-bold text-lg mb-2">Read the range</h3>
+                    <p class="text-zinc-600 text-sm">You'll get the exact possible birth date range and the matching
+                        birth year, or the two adjacent years it could fall between.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Use cases -->
+        <section aria-labelledby="use-cases">
+            <h2 id="use-cases" class="font-bold text-3xl mb-3">Who uses a birth year calculator</h2>
+            <ul class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-3 text-zinc-600 max-w-3xl">
+                <li class="flex gap-2"><span class="text-orange-600">—</span> Filling out a form that asks for a
+                    birth year but you only know your age</li>
+                <li class="flex gap-2"><span class="text-orange-600">—</span> Genealogy research from an age listed
+                    in an old record</li>
+                <li class="flex gap-2"><span class="text-orange-600">—</span> Checking age-based eligibility as of a
+                    specific cutoff date</li>
+                <li class="flex gap-2"><span class="text-orange-600">—</span> Working out someone's birth year from a
+                    historical account of their age</li>
+                <li class="flex gap-2"><span class="text-orange-600">—</span> Quick sanity-checking a birth year
+                    someone gave you</li>
+            </ul>
+        </section>
+
+        <!-- FAQ -->
+        <section aria-labelledby="faq">
+            <h2 id="faq" class="font-bold text-3xl mb-6">Frequently asked questions</h2>
+            <div class="divide-y divide-zinc-300 border border-zinc-300 rounded-2xl shadow-lg max-w-3xl">
+                <div class="p-5">
+                    <h3 class="font-bold mb-1">Why does the calculator give two possible birth years instead of one?
+                    </h3>
+                    <p class="text-zinc-600 text-sm">Completed age alone doesn't reveal whether the birthday has
+                        already happened this year, so the true birth year can fall in either of two adjacent years.
+                    </p>
+                </div>
+                <div class="p-5">
+                    <h3 class="font-bold mb-1">What reference date should I use?</h3>
+                    <p class="text-zinc-600 text-sm">The date the age applies to — leave it as today for a
+                        "right now" question, or set it to a specific form, deadline, or event date.</p>
+                </div>
+                <div class="p-5">
+                    <h3 class="font-bold mb-1">Can I use a date in the past or future?</h3>
+                    <p class="text-zinc-600 text-sm">Yes — any reference date works, as long as it's the date the
+                        stated age is measured from.</p>
+                </div>
+                <div class="p-5">
+                    <h3 class="font-bold mb-1">Is this the same as an age calculator?</h3>
+                    <p class="text-zinc-600 text-sm">It's the reverse — an age calculator goes from a known birth
+                        date to a current age; this tool goes from a known age back to the possible birth dates.</p>
+                </div>
+                <div class="p-5">
+                    <h3 class="font-bold mb-1">Does this account for leap years?</h3>
+                    <p class="text-zinc-600 text-sm">Yes, the date math adjusts for leap years automatically.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="pb-10">
+        <div class="max-w-6xl mx-auto px-4 pt-10">
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-8 mb-10">
+                <div class="col-span-2 sm:col-span-1">
+                    <a href="/" class="">
+                        <img src="/images/logo.png" alt="youtubethumbgrabber.xyz"
+                            class="h-12 border border-zinc-300 rounded-xl shadow-lg hover:scale-105 transition duration-300">
+                    </a>
+                </div>
+                <div>
+                    <div class="text-lg font-semibold mb-3">More Tools</div>
+                    <ul class="space-y-2 text-sm">
+
+                        <li><a href="/tools/wcpm-calculator.html" title="Coming Soon"
+                                class="hover:text-zinc-400 transition-colors">WCPM Calculator</a>
+                        </li>
+                        <li><a href="/tools/instagram-font-generator.html" title="Coming Soon"
+                                class="hover:text-zinc-400 transition-colors">Instagram Font Generator</a>
+                        </li>
+                        <li><a href="/tools/birth-year-calculator.html" title="Coming Soon"
+                                class="hover:text-zinc-400 transition-colors">Birth Year Calculator</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div>
+                    <div class="text-lg font-semibold  mb-3">Quick Links</div>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" title="Coming Soon" class="hover:text-zinc-400 transition-colors">Materials</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="text-lg font-semibold mb-3">Pages</div>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/pages/about.html" class="hover:text-zinc-400 transition-colors">About</a></li>
+                        <li><a href="/pages/contact.html" class="hover:text-zinc-400 transition-colors">Contact</a></li>
+                        <li><a href="/pages/privacy.html" class="hover:text-zinc-400 transition-colors ">Privacy Policy</a>
+                        </li>
+                        <li><a href="/pages/terms.html" class="hover:text-zinc-400 transition-colors ">Terms of Use</a>
+                        </li>
+                        <li><a href="/pages/dmca.html" class="hover:text-zinc-400 transition-colors ">Dmca</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                class="border-t border-zinc-300 pt-6 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs ">
+                <span>© 2026 <span class="text-black font-semibold">youtubethumbgrabber.xyz</span>. All rights
+                    reserved.</span>
+                <span>Made with ❤️ in Earth</span>
+            </div>
+        </div>
+
+    </footer>
+
+    <script>
+        const ageInput = document.getElementById('ageInput');
+        const refDateInput = document.getElementById('refDateInput');
+        const calcBtn = document.getElementById('calcBtn');
+        const calcError = document.getElementById('calcError');
+        const resultBox = document.getElementById('resultBox');
+        const yearResult = document.getElementById('yearResult');
+        const rangeResult = document.getElementById('rangeResult');
+
+        function showCalcError(message) {
+            calcError.textContent = message;
+            calcError.classList.remove('hidden');
+            resultBox.classList.add('hidden');
+        }
+
+        // Adds (or subtracts, if negative) whole years to a date, clamping the day
+        // to the last valid day of the target month (handles Feb 29 -> Feb 28, etc.)
+        function addYears(date, years) {
+            const day = date.getDate();
+            const month = date.getMonth();
+            const targetYear = date.getFullYear() + years;
+            const daysInTargetMonth = new Date(targetYear, month + 1, 0).getDate();
+            return new Date(targetYear, month, Math.min(day, daysInTargetMonth));
+        }
+
+        function addDays(date, days) {
+            const d = new Date(date.getTime());
+            d.setDate(d.getDate() + days);
+            return d;
+        }
+
+        function formatDate(date) {
+            return date.toLocaleDateString(undefined, { year: 'numeric', month: 'long', day: 'numeric' });
+        }
+
+        function calculate() {
+            calcError.classList.add('hidden');
+
+            const age = parseInt(ageInput.value, 10);
+            if (isNaN(age) || age < 0 || age > 130) {
+                showCalcError('Enter a valid completed age between 0 and 130.');
+                return;
+            }
+
+            let refDate;
+            if (refDateInput.value) {
+                const parts = refDateInput.value.split('-').map(Number);
+                refDate = new Date(parts[0], parts[1] - 1, parts[2]);
+            } else {
+                refDate = new Date();
+                refDate.setHours(0, 0, 0, 0);
+            }
+
+            const latestBirth = addYears(refDate, -age);
+            const earliestBirthExclusive = addYears(refDate, -(age + 1));
+            const earliestBirth = addDays(earliestBirthExclusive, 1);
+
+            const earliestYear = earliestBirth.getFullYear();
+            const latestYear = latestBirth.getFullYear();
+
+            yearResult.textContent = earliestYear === latestYear
+                ? String(earliestYear)
+                : earliestYear + ' or ' + latestYear;
+
+            rangeResult.textContent = formatDate(earliestBirth) + ' – ' + formatDate(latestBirth);
+
+            resultBox.classList.remove('hidden');
+        }
+
+        calcBtn.addEventListener('click', calculate);
+        [ageInput, refDateInput].forEach((el) => {
+            el.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter') calculate();
+            });
+        });
+    </script>
+</body>
+
+</html>
