@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gematria Calculator - Ordinal, Reverse, Jewish & Hebrew Ciphers</title>
+    <meta name="description"
+        content="Calculate the gematria value of any word or phrase across 7 cipher systems at once — Ordinal, Reverse, Reduction, English Gematria, Jewish Gematria, and true Hebrew Gematria — with a letter-by-letter breakdown.">
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical" href="https://youtubethumbgrabber.xyz/tools/gematria-calculator.html">
+
+    <meta property="og:title" content="Gematria Calculator - Ordinal, Reverse, Jewish & Hebrew Ciphers">
+    <meta property="og:description"
+        content="Calculate gematria values across 7 cipher systems at once, with a full letter-by-letter breakdown.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://youtubethumbgrabber.xyz/tools/gematria-calculator.html">
+    <meta property="og:image" content="https://www.youtubethumbgrabber.xyz/images/logo.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Gematria Calculator - Ordinal, Reverse, Jewish & Hebrew Ciphers">
+    <meta name="twitter:description"
+        content="Calculate gematria values across 7 cipher systems at once, with a full letter-by-letter breakdown.">
+    <meta name="twitter:image" content="https://www.youtubethumbgrabber.xyz/images/logo.png">
+    <meta name="theme-color" content="#EA580C">
+
+    <link rel="icon" href="/images/logo-modified.png" sizes="any">
+    <link rel="apple-touch-icon" href="/images/logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Geomini:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Space+Grotesk:wght@300..700&display=swap">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Gematria Calculator",
+      "url": "https://youtubethumbgrabber.xyz/tools/gematria-calculator.html",
+      "applicationCategory": "UtilityApplication",
+      "operatingSystem": "Any (runs in browser)",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+      "description": "Calculate the gematria value of a word or phrase across Ordinal, Reverse, Reduction, English, Jewish, and Hebrew cipher systems, with a letter-by-letter breakdown."
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://youtubethumbgrabber.xyz/" },
+        { "@type": "ListItem", "position": 2, "name": "Tools", "item": "https://youtubethumbgrabber.xyz/tools/" },
+        { "@type": "ListItem", "position": 3, "name": "Gematria Calculator", "item": "https://youtubethumbgrabber.xyz/tools/gematria-calculator.html" }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is gematria?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Gematria is the practice of assigning a numerical value to each letter of an alphabet, then summing those values to give a word or phrase a total number. It began in Hebrew scholarship, where letters already doubled as numerals, and later spread to Greek isopsephy and modern English ciphers." }
+        },
+        {
+          "@type": "Question",
+          "name": "Which cipher should I use?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Hebrew Gematria (Mispar Hechrachi) is the original, historically documented system. English ciphers like Ordinal, Reverse, and Jewish Gematria are modern adaptations with no single agreed standard, so which one to use mostly depends on which tradition or online community you're comparing results with." }
+        },
+        {
+          "@type": "Question",
+          "name": "Why do different gematria calculators give different numbers for the same word?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Because English gematria isn't a single historical system — different sites use different letter-to-number tables under similar names. This calculator states exactly how each cipher is defined so you can check the math yourself." }
+        },
+        {
+          "@type": "Question",
+          "name": "Does a matching gematria value between two words mean something?",
+          "acceptedAnswer": { "@type": "Answer", "text": "That's a matter of belief and interpretation, not something this tool can confirm. Gematria is a symbolic and interpretive practice — this calculator only reports the arithmetic." }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I calculate real Hebrew words, not just English letters mapped to Hebrew values?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes — type Hebrew characters directly and the Hebrew Gematria (Mispar Hechrachi) result will use the standard Hebrew letter values." }
+        }
+      ]
+    }
+    </script>
+</head>
+
+<body style="font-family: 'Google Sans', 'Space Grotesk', 'Open Sans', sans-serif;" class="text-zinc-800">
+    <header class="flex justify-between max-w-6xl mx-auto items-center px-4 py-6">
+        <a href="/" class="">
+            <img src="/images/logo.png" alt="youtubethumbgrabber.xyz"
+                class="h-12 border border-zinc-300 rounded-xl shadow-lg hover:scale-105 transition duration-300">
+        </a>
+        <nav>
+            <a href="/pages/contact.html"
+                class="inline-flex py-2.5 sm:py-3 px-4 border border-zinc-300 rounded-2xl shadow-lg hover:scale-105 transition duration-300">
+                Contact Us
+            </a>
+        </nav>
+    </header>
+
+    <nav aria-label="Breadcrumb" class="max-w-6xl mx-auto px-4 pt-4">
+        <ol class="flex gap-2 text-xs font-mono text-zinc-500">
+            <li><a href="/" class="hover:text-orange-600">Home</a></li>
+            <li>/</li>
+            <li><a href="/tools/" class="hover:text-orange-600">Tools</a></li>
+            <li>/</li>
+            <li class="text-zinc-800">Gematria Calculator</li>
+        </ol>
+    </nav>
+
+    <section class="max-w-6xl mx-auto px-4 pt-6">
+        <h1 class="font-bold text-4xl sm:text-5xl">Gematria Calculator <br> (7 Cipher Systems)</h1>
+        <p class="pt-4 text-lg text-zinc-600 max-w-2xl">Type a word, name, or phrase and get its value across seven
+            gematria systems at once — Ordinal, Reverse, Reduction, English, Jewish, and true Hebrew — with a full
+            letter-by-letter breakdown.</p>
+    </section>
+
+     <div class="max-w-6xl mx-auto mb-10">
+        <script async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2179785225331533"
+            crossorigin="anonymous"></script>
+        <!-- square ads -->
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2179785225331533"
+            data-ad-slot="1507326584" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+
+    <section class="max-w-3xl mx-auto px-4 mt-9">
+        <label for="sourceText" class="pl-1 text-[11px] text-zinc-500 tracking-widest block mb-2">TYPE A WORD, NAME,
+            OR PHRASE</label>
+        <textarea id="sourceText" rows="2" dir="auto" placeholder="Type something here…"
+            class="focus-ring w-full border border-zinc-300 rounded-2xl px-4 py-3.5 shadow-lg text-lg resize-none"></textarea>
+        <p class="text-xs text-zinc-500 mt-2 pl-1">Values update live as you type. For Hebrew Gematria, type Hebrew
+            characters directly.</p>
+    </section>
+
+    
+
+    <section class="max-w-3xl mx-auto px-4 mt-8">
+        <div id="totalsGrid" class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+            <!-- total cards injected here -->
+        </div>
+    </section>
+
+     <div class="max-w-6xl mx-auto mb-10">
+        <script async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2179785225331533"
+            crossorigin="anonymous"></script>
+        <!-- square ads -->
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2179785225331533"
+            data-ad-slot="1507326584" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+
+    <section class="max-w-3xl mx-auto px-4 mt-8 mb-20">
+        <div class="border border-zinc-300 rounded-2xl shadow-lg p-6">
+            <div class="flex items-center justify-between gap-4 mb-4 flex-wrap">
+                <p class="font-mono text-xs text-zinc-500 tracking-widest">LETTER-BY-LETTER BREAKDOWN</p>
+                <select id="breakdownCipher"
+                    class="border border-zinc-300 rounded-xl px-3 py-2 text-sm shadow-lg">
+                    <!-- options injected here -->
+                </select>
+            </div>
+            <div id="breakdownRow" class="flex flex-wrap gap-2" dir="auto"></div>
+        </div>
+    </section>
+
+    <main class="max-w-6xl mx-auto px-4 pb-20 space-y-20">
+
+        <!-- What is gematria -->
+        <section aria-labelledby="what-is-gematria">
+            <h2 id="what-is-gematria" class="font-bold text-3xl mb-3">What is gematria?</h2>
+            <p class="text-zinc-600 max-w-2xl">Gematria is the practice of assigning a numerical value to each letter
+                of an alphabet, then adding those values up to give a word or phrase a single total. It started in
+                Hebrew scholarship — where letters already doubled as numerals — as a tool for finding numerical
+                connections between words in religious texts. The same idea later appeared in Greek as "isopsephy,"
+                and, much more recently, in a range of informal English ciphers popularized online.</p>
+        </section>
+
+        <!-- Cipher table -->
+        <section aria-labelledby="cipher-systems">
+            <h2 id="cipher-systems" class="font-bold text-3xl mb-3">The 7 ciphers, explained</h2>
+            <p class="text-zinc-600 max-w-2xl mb-6">English gematria has no single agreed standard — different sites
+                define ciphers with the same name differently. Here's exactly how each one works in this
+                calculator, so you can check the math yourself.</p>
+            <div class="overflow-x-auto border border-zinc-300 rounded-2xl shadow-lg">
+                <table class="w-full text-sm text-left">
+                    <thead class="bg-zinc-100 font-mono text-xs uppercase tracking-widest text-zinc-500">
+                        <tr>
+                            <th class="px-5 py-3">Cipher</th>
+                            <th class="px-5 py-3">How it's calculated</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-zinc-200">
+                        <tr>
+                            <td class="px-5 py-3 font-bold">Ordinal</td>
+                            <td class="px-5 py-3 text-zinc-600">A=1, B=2, … Z=26 — each letter's position in the
+                                alphabet, summed.</td>
+                        </tr>
+                        <tr>
+                            <td class="px-5 py-3 font-bold">Reverse Ordinal</td>
+                            <td class="px-5 py-3 text-zinc-600">A=26, B=25, … Z=1 — the alphabet counted backward.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="px-5 py-3 font-bold">Reduction</td>
+                            <td class="px-5 py-3 text-zinc-600">Each letter's Ordinal value is reduced to a single
+                                digit by adding its digits together (K=11 → 1+1=2), then summed.</td>
+                        </tr>
+                        <tr>
+                            <td class="px-5 py-3 font-bold">Reverse Reduction</td>
+                            <td class="px-5 py-3 text-zinc-600">The same digit-reduction, applied to each letter's
+                                Reverse Ordinal value instead.</td>
+                        </tr>
+                        <tr>
+                            <td class="px-5 py-3 font-bold">English Gematria (×6)</td>
+                            <td class="px-5 py-3 text-zinc-600">Each letter's Ordinal value multiplied by 6 — A=6,
+                                B=12, … Z=156.</td>
+                        </tr>
+                        <tr>
+                            <td class="px-5 py-3 font-bold">Jewish Gematria</td>
+                            <td class="px-5 py-3 text-zinc-600">English letters mapped onto a Hebrew-style
+                                units/tens/hundreds table: A–I = 1–9, K–S = 10–90, T,U,X,Y,Z = 100–500, with J=600,
+                                V=700, W=900 as fixed exceptions.</td>
+                        </tr>
+                        <tr>
+                            <td class="px-5 py-3 font-bold">Hebrew Gematria</td>
+                            <td class="px-5 py-3 text-zinc-600">The original system (Mispar Hechrachi) — real Hebrew
+                                letters summed using their standard values, א=1 through ת=400.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Use cases -->
+        <section aria-labelledby="use-cases">
+            <h2 id="use-cases" class="font-bold text-3xl mb-3">Who uses a gematria calculator</h2>
+            <ul class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-3 text-zinc-600 max-w-3xl">
+                <li class="flex gap-2"><span class="text-orange-600">—</span> Students of Torah or Kabbalah studying
+                    traditional Hebrew gematria</li>
+                <li class="flex gap-2"><span class="text-orange-600">—</span> Numerology enthusiasts comparing names,
+                    dates, or phrases</li>
+                <li class="flex gap-2"><span class="text-orange-600">—</span> Writers looking for symbolic
+                    connections between words</li>
+                <li class="flex gap-2"><span class="text-orange-600">—</span> Anyone checking a gematria claim they
+                    saw online</li>
+            </ul>
+        </section>
+
+        <!-- Disclaimer -->
+        <section aria-labelledby="disclaimer" class="border border-zinc-300 rounded-2xl shadow-lg p-6 bg-zinc-50">
+            <h2 id="disclaimer" class="font-bold text-xl mb-2">A quick note</h2>
+            <p class="text-zinc-600 text-sm">Gematria is a symbolic and interpretive practice, not a scientific or
+                mathematical proof of anything. Two words sharing a total is a property of whichever cipher table
+                you're using — this calculator reports the arithmetic accurately, but what you make of a match is a
+                matter of tradition and personal belief.</p>
+        </section>
+
+        <!-- FAQ -->
+        <section aria-labelledby="faq">
+            <h2 id="faq" class="font-bold text-3xl mb-6">Frequently asked questions</h2>
+            <div class="divide-y divide-zinc-300 border border-zinc-300 rounded-2xl shadow-lg max-w-3xl">
+                <div class="p-5">
+                    <h3 class="font-bold mb-1">What is gematria?</h3>
+                    <p class="text-zinc-600 text-sm">A system that assigns a number to each letter of an alphabet,
+                        then sums them to give a word or phrase a total value.</p>
+                </div>
+                <div class="p-5">
+                    <h3 class="font-bold mb-1">Which cipher should I use?</h3>
+                    <p class="text-zinc-600 text-sm">Hebrew Gematria is the original, historically documented system.
+                        The English ciphers are modern adaptations with no single standard, so it depends on which
+                        tradition or online source you're comparing against.</p>
+                </div>
+                <div class="p-5">
+                    <h3 class="font-bold mb-1">Why do different calculators give different numbers for the same
+                        word?</h3>
+                    <p class="text-zinc-600 text-sm">English gematria isn't one historical system — different sites
+                        use different tables under similar names. This calculator states exactly how each cipher is
+                        defined.</p>
+                </div>
+                <div class="p-5">
+                    <h3 class="font-bold mb-1">Does a matching value between two words mean something?</h3>
+                    <p class="text-zinc-600 text-sm">That's a matter of interpretation and belief — this tool only
+                        reports the arithmetic.</p>
+                </div>
+                <div class="p-5">
+                    <h3 class="font-bold mb-1">Can I calculate real Hebrew words?</h3>
+                    <p class="text-zinc-600 text-sm">Yes — type Hebrew characters directly and the Hebrew Gematria
+                        result uses the standard Mispar Hechrachi values.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="pb-10">
+        <div class="max-w-6xl mx-auto px-4 pt-10">
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-8 mb-10">
+                <div class="col-span-2 sm:col-span-1">
+                    <a href="/" class="">
+                        <img src="/images/logo.png" alt="youtubethumbgrabber.xyz"
+                            class="h-12 border border-zinc-300 rounded-xl shadow-lg hover:scale-105 transition duration-300">
+                    </a>
+                </div>
+                <div>
+                    <div class="text-lg font-semibold mb-3">More Tools</div>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/tools/wcpm-calculator.html" class="hover:text-zinc-400 transition-colors">WCPM
+                                Calculator</a></li>
+                        <li><a href="/tools/instagram-font-generator.html"
+                                class="hover:text-zinc-400 transition-colors">Instagram Font Generator</a></li>
+                        <li><a href="/tools/birth-year-calculator.html"
+                                class="hover:text-zinc-400 transition-colors">Birth Year Calculator</a></li>
+                        <li><a href="/tools/gematria-calculator.html"
+                                class="hover:text-zinc-400 transition-colors">Gematria Calculator</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="text-lg font-semibold mb-3">Quick Links</div>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/blog/index.html" class="hover:text-zinc-400 transition-colors">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="text-lg font-semibold mb-3">Pages</div>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/pages/about.html" class="hover:text-zinc-400 transition-colors">About</a></li>
+                        <li><a href="/pages/contact.html" class="hover:text-zinc-400 transition-colors">Contact</a>
+                        </li>
+                        <li><a href="/pages/privacy.html" class="hover:text-zinc-400 transition-colors">Privacy
+                                Policy</a></li>
+                        <li><a href="/pages/terms.html" class="hover:text-zinc-400 transition-colors">Terms of Use</a>
+                        </li>
+                        <li><a href="/pages/dmca.html" class="hover:text-zinc-400 transition-colors">Dmca</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                class="border-t border-zinc-300 pt-6 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs">
+                <span>© 2026 <span class="text-black font-semibold">youtubethumbgrabber.xyz</span>. All rights
+                    reserved.</span>
+                <span>Made with ❤️ in Earth</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // ---- Cipher tables ----
+        const ORD = {}, REV = {};
+        for (let i = 0; i < 26; i++) {
+            const letter = String.fromCharCode(65 + i);
+            ORD[letter] = i + 1;
+            REV[letter] = 26 - i;
+        }
+
+        const JEWISH = { A: 1, B: 2, C: 3, D: 4, E: 5, F: 6, G: 7, H: 8, I: 9, J: 600, K: 10, L: 20, M: 30, N: 40, O: 50, P: 60, Q: 70, R: 80, S: 90, T: 100, U: 200, V: 700, W: 900, X: 300, Y: 400, Z: 500 };
+
+        const HEBREW = { 'א': 1, 'ב': 2, 'ג': 3, 'ד': 4, 'ה': 5, 'ו': 6, 'ז': 7, 'ח': 8, 'ט': 9, 'י': 10, 'כ': 20, 'ך': 20, 'ל': 30, 'מ': 40, 'ם': 40, 'נ': 50, 'ן': 50, 'ס': 60, 'ע': 70, 'פ': 80, 'ף': 80, 'צ': 90, 'ץ': 90, 'ק': 100, 'ר': 200, 'ש': 300, 'ת': 400 };
+
+        function digitRoot(n) {
+            while (n > 9) n = String(n).split('').reduce((a, d) => a + Number(d), 0);
+            return n;
+        }
+
+        const CIPHERS = [
+            { key: 'ordinal', name: 'Ordinal', value: (ch) => { const u = ch.toUpperCase(); return ORD[u] !== undefined ? ORD[u] : null; } },
+            { key: 'reverse', name: 'Reverse Ordinal', value: (ch) => { const u = ch.toUpperCase(); return REV[u] !== undefined ? REV[u] : null; } },
+            { key: 'reduction', name: 'Reduction', value: (ch) => { const u = ch.toUpperCase(); return ORD[u] !== undefined ? digitRoot(ORD[u]) : null; } },
+            { key: 'reverseReduction', name: 'Reverse Reduction', value: (ch) => { const u = ch.toUpperCase(); return REV[u] !== undefined ? digitRoot(REV[u]) : null; } },
+            { key: 'english6', name: 'English Gematria (×6)', value: (ch) => { const u = ch.toUpperCase(); return ORD[u] !== undefined ? ORD[u] * 6 : null; } },
+            { key: 'jewish', name: 'Jewish Gematria', value: (ch) => { const u = ch.toUpperCase(); return JEWISH[u] !== undefined ? JEWISH[u] : null; } },
+            { key: 'hebrew', name: 'Hebrew Gematria', value: (ch) => HEBREW[ch] !== undefined ? HEBREW[ch] : null },
+        ];
+
+        const sourceText = document.getElementById('sourceText');
+        const totalsGrid = document.getElementById('totalsGrid');
+        const breakdownCipher = document.getElementById('breakdownCipher');
+        const breakdownRow = document.getElementById('breakdownRow');
+
+        function buildTotalsGrid() {
+            totalsGrid.innerHTML = '';
+            CIPHERS.forEach((cipher) => {
+                const card = document.createElement('div');
+                card.className = 'border border-zinc-300 rounded-2xl shadow-lg p-4 text-center bg-white';
+                card.innerHTML = `
+                    <p class="font-mono text-[10px] text-zinc-500 tracking-widest mb-1">${cipher.name.toUpperCase()}</p>
+                    <p class="total-value text-2xl font-bold text-orange-600">0</p>
+                `;
+                card.dataset.cipher = cipher.key;
+                totalsGrid.appendChild(card);
+            });
+        }
+
+        function buildBreakdownSelect() {
+            breakdownCipher.innerHTML = '';
+            CIPHERS.forEach((cipher) => {
+                const opt = document.createElement('option');
+                opt.value = cipher.key;
+                opt.textContent = cipher.name;
+                breakdownCipher.appendChild(opt);
+            });
+        }
+
+        function render() {
+            const raw = sourceText.value;
+            const chars = Array.from(raw).filter((ch) => !/\s/.test(ch));
+
+            CIPHERS.forEach((cipher) => {
+                let total = 0;
+                chars.forEach((ch) => {
+                    const v = cipher.value(ch);
+                    if (v !== null) total += v;
+                });
+                const card = totalsGrid.querySelector(`[data-cipher="${cipher.key}"] .total-value`);
+                if (card) card.textContent = total;
+            });
+
+            const activeCipher = CIPHERS.find((c) => c.key === breakdownCipher.value) || CIPHERS[0];
+            breakdownRow.innerHTML = '';
+            if (chars.length === 0) {
+                breakdownRow.innerHTML = '<p class="text-sm text-zinc-500">Type something above to see the breakdown.</p>';
+                return;
+            }
+            chars.forEach((ch) => {
+                const v = activeCipher.value(ch);
+                const chip = document.createElement('div');
+                chip.className = 'border border-zinc-300 rounded-xl px-3 py-2 text-center min-w-[3rem]';
+                chip.innerHTML = `
+                    <p class="font-bold text-lg leading-none">${ch}</p>
+                    <p class="text-[11px] font-mono text-zinc-500 mt-1">${v !== null ? v : '—'}</p>
+                `;
+                breakdownRow.appendChild(chip);
+            });
+        }
+
+        buildTotalsGrid();
+        buildBreakdownSelect();
+        render();
+        sourceText.addEventListener('input', render);
+        breakdownCipher.addEventListener('change', render);
+    </script>
+</body>
+
+</html>
