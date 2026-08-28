@@ -2,15 +2,15 @@
 <html lang="en">
 
 <head>
-      <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-BXT4SKHJBD"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BXT4SKHJBD"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'G-BXT4SKHJBD');
-</script>
+        gtag('config', 'G-BXT4SKHJBD');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -34,9 +34,6 @@
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2179785225331533"
-     crossorigin="anonymous"></script>
 
     <!-- Fonts -->
     <style>
@@ -91,13 +88,25 @@
         </p>
     </section>
 
+    <div class="mx-auto mt-2">
+        <script async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2179785225331533"
+            crossorigin="anonymous"></script>
+        <!-- square ads -->
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2179785225331533"
+            data-ad-slot="1507326584" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+
 
     <!-- ================= BLOG POSTS ================= -->
 
     <main class="max-w-6xl mx-auto px-4 pb-20">
 
         <div id="blogGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 pt-6">
-            <!-- Blog posts + in-feed ads will be inserted here -->
+            <!-- Blog posts will be inserted here -->
         </div>
 
         <!-- Empty State -->
@@ -188,6 +197,14 @@
 
         const POSTS = [
             {
+                title: "U.S. Debt Nears $40 Trillion: The ETFs Getting Hit and the Ones Investors Are Fleeing To",
+                url: "us-debt-nears-40-trillion-etfs.html",
+                image: "/images/etfs-image.webp",
+                excerpt:
+                    "Soaring deficits and a 19-year high on the 30-year Treasury yield are turning America's fiscal reality into a first-order driver of the ETF market — and not every fund is feeling it the same way.",
+                date: "28 Aug 2026"
+            },
+            {
                 title: "Judge Approves Bank of America's $72.5 Million Settlement With Epstein Victims",
                 url: "/blog/bank-of-america-epstein-victims-settlement.html",
                 image: "/images/Jeffrey-epstien.webp",
@@ -265,9 +282,6 @@
         const blogGrid = document.getElementById("blogGrid");
         const emptyState = document.getElementById("emptyState");
 
-        // How many post cards appear between each in-feed ad.
-        const AD_EVERY_N_POSTS = 3;
-
 
         /*
          * Create Blog Card
@@ -309,26 +323,7 @@
 
 
         /*
-         * Create an in-feed ad slot that spans the full grid width
-         * at every breakpoint (1, 2, or 3 columns), so it always
-         * reads as a full-width row on both desktop and mobile.
-         */
-        function adSlot() {
-            const wrap = document.createElement("div");
-            wrap.className = "col-span-1 sm:col-span-2 lg:col-span-3";
-
-            wrap.innerHTML = `
-                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2179785225331533"
-                    data-ad-slot="1507326584" data-ad-format="auto" data-full-width-responsive="true"></ins>
-            `;
-
-            return wrap;
-        }
-
-
-        /*
-         * Render Blog Posts, with a full-width ad inserted
-         * after every AD_EVERY_N_POSTS cards.
+         * Render Blog Posts.
          */
         function render() {
             if (!POSTS.length) {
@@ -336,16 +331,8 @@
                 return;
             }
 
-            POSTS.forEach((post, i) => {
+            POSTS.forEach((post) => {
                 blogGrid.appendChild(postCard(post));
-
-                const isLastPost = i === POSTS.length - 1;
-                if ((i + 1) % AD_EVERY_N_POSTS === 0 && !isLastPost) {
-                    const ad = adSlot();
-                    blogGrid.appendChild(ad);
-                    // Request a fill for this specific ad slot.
-                    (adsbygoogle = window.adsbygoogle || []).push({});
-                }
             });
         }
 
